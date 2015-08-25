@@ -6,10 +6,11 @@ source:
   path: ..
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
+    - cmake
     - gcc ==4.8.4.99
   run:
     - libgcc
