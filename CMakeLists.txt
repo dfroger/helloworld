@@ -7,6 +7,8 @@ set(HELLOWORLD_LIBRARY helloworld)
 set(HELLOWORLD_CONFIGDIR_FROM_PREFIX share/heimdali)
 set(HELLOWORLD_PREFIX_FROM_CONFIGDIR ../../)
 
+SET(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
+
 # Create library.
 add_library(helloworld SHARED greet.cxx)
 
@@ -27,6 +29,11 @@ install(
     DIRECTORY helloworld
     DESTINATION include
 )
+
+# Install executable.
+install(
+    TARGETS helloworld-bin
+    DESTINATION bin)
 
 # Install exports.
 install(
