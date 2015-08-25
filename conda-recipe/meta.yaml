@@ -1,0 +1,24 @@
+package:
+  name: helloworld
+  version: 0.1.0
+
+source:
+  path: ..
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - gcc ==4.8.4.99
+  run:
+    - libgcc
+
+test:
+    commands:
+        - helloworld
+
+about:
+  home: https://github.com/dfroger/helloworld
+  license: GPL
+  summary: Hello world C++ library and program
