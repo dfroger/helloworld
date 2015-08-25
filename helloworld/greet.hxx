@@ -3,7 +3,12 @@
 
 #include <string>
 
+namespace Helloworld
+{
+
 std::string
 greet(std::string name);
+
+};
 
 #endif

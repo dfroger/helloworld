@@ -1,0 +1,10 @@
+# This file is in `configdir` directory.
+# `configdir` directory is $PREFIX/share/helloworld
+get_filename_component(_configdir "${CMAKE_CURRENT_LIST_FILE}" PATH)
+get_filename_component(_prefix "${_configdir}/@HELLOWORLD_PREFIX_FROM_CONFIGDIR@" ABSOLUTE)
+
+# Import the target
+include("${_configdir}/HELLOWORLD_LIBRARY.cmake")
+
+set(HELLOWORLD_LIBRARIES helloworld)
+set(HELLOWORLD_INCLUDE_DIRS "${_prefix}/include")

@@ -1,0 +1,7 @@
+# Heimdali configuration for develop mode (build but no install)
+
+# Import the target
+include("@HELLOWORLD_BINARY_DIR@/HELLOWORLD_LIBRARY.cmake")
+
+set(HELLOWORLD_LIBRARIES helloworld)
+set(HELLOWORLD_INCLUDE_DIRS "@HELLOWORLD_SOURCE_DIR@/libhelloworld")
