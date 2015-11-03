@@ -6,7 +6,7 @@ source:
   path: ..
 
 build:
-  string: 10_7_libstdc++_0
+  string: 10_7_libstdc++_1
 
 test:
     commands:
