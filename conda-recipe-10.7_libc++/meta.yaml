@@ -1,0 +1,18 @@
+package:
+  name: helloworld
+  version: 0.1.0
+
+source:
+  path: ..
+
+build:
+  string: 10_7_libc++_0
+
+test:
+    commands:
+        - helloworld
+
+about:
+  home: https://github.com/dfroger/helloworld
+  license: GPL
+  summary: Hello world C++ library and program
