@@ -1,1 +1,4 @@
-make CXX=clang++ CXXFLAGS=-stdlib=libc++ LDFLAGS=-stdlib=libc++
+make \
+    CXX=clang++ \
+    CXXFLAGS="-stdlib=libc++ --std=c++11" \
+    LDFLAGS="-stdlib=libc++ --std=c++11"

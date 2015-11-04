@@ -7,4 +7,4 @@ $(EXENAME): main.o
 	$(CXX) -c $< $(CXXFLAGS) -I$(CONDA_ENV_PATH)/include
 
 clean:
-	rm *.o $(EXENAME)
+	rm -f *.o $(EXENAME)
